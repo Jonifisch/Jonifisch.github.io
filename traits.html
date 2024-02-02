@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traits - Joker 2</title>
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+
+  <!-- External CSS file -->
+  <link rel="stylesheet" type="text/css" href="joker2.css">
+</head>
+<body>
+  <div align="left">
+    <a href="/index.html">
+        Return to Index
+    </a>
+</div>
+<div align="center">
+    
+<img align="center" src="Dragon_Quest_Monsters_Joker_2_Logo.jpg" alt="Dragon Quest Monsters Joker 2" Height="150" Width="324">
+<h1>
+List of all Traits
+</h1>
+</img>
+</div>
+<!-- Search bar -->
+<div id="search-container">
+  <input type="text" id="search-input" onkeyup="filterTable()" placeholder="Search...">
+</div>
+
+<!-- Table -->
+<table id="data-table" border="1">
+  <thead><tr><th>Name</th>
+    <th>Effect</th>
+    <th>Monsters with this trait</th>
+    <th>Skillsets with this trait</th>
+    </tr></thead>
+    <tbody><tr>
+    <td>Abiliterator Guard</td>
+    <td>Increases resistance to Abiliterator.</td>
+    <td> </td>
+    <td>Fire III, Ice III, Wulfspade III, Abiliterator Ward</td>
+    </tr>
+    <tr>
+    <td>Able Ambusher</td>
+    <td>Doubles the chance of launching pre-emptive strikes.</td>
+    <td>Octavian sentry, Noble gasbagon, Jumping jackal, Lethal armour, Fright knight</td>
+    <td>Ban Dance Ward, Confusion Ward, Inaction Ward, Sleep Ward, Martial Artist, Empyrea, Blade Blunter Ward</td>
+    </tr>
+    <tr>
+    <td>Agility Roulette</td>
+    <td>Agility may increase or decrease in battle.</td>
+    <td> </td>
+    <td>Icemeister</td>
+    </tr>
+    <tr>
+    <td>Artful Dodger</td>
+    <td>Doubles the chance of evading enemy attacks.</td>
+    <td>Swarmtroop, Dracky, Ghost, Dragonthorn, Hell hornet, Drake slime, Boreal serpent, Snapdragon, Snowbird, Night emperor, Flyguy, Angel slime, Seasaur, Mecha-mynah, Phantom fencer, Hades condor, Dragon slime, Gargoyle, Great dracky, Sea dragon, Erazor blade, Abyss diver, Firebird, Phantom swordsman, Ethereal serpent, Megalodon, Stark raven, Heligator, Garuda, Chimaera XY, Leopold, Rhapthorne</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Attack Roulette</td>
+    <td>Attack may increase or decrease in battle.</td>
+    <td> </td>
+    <td>Fire Fighter</td>
+    </tr>
+    <tr>
+    <td>Ban Dance Guard</td>
+    <td>Increases resistance to Ban Dance.</td>
+    <td> </td>
+    <td>Mime, Hawkhart, Ban Dance Ward, Wonder Construction</td>
+    </tr>
+    <tr>
+    <td>Bang Guard</td>
+    <td>Increases resistance to Bang-type magic.</td>
+    <td> </td>
+    <td>Frizz &amp; Bang III, Bang &amp; Woosh II, Bang &amp; Woosh III, Bang &amp; Crack II, Bang &amp; Crack III, Bang &amp; Zap II, Bang &amp; Zap III, Bang &amp; Zam III, Bang Ward, Uber Windblast Ward, Bang &amp; Sizz II, Bang &amp; Sizz III</td>
+    </tr>
+    <tr>
+    <td>Bangmeister</td>
+    <td>Boosts Bang-type magic effects while decreasing MP consumption.</td>
+    <td>Spitnik, Imp, Archdemon, Belial, Mumboh-jumboe, Trauminator</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Big Hitter</td>
+    <td>Increases damage dealt by attacks, skills and abilities.</td>
+    <td>Boreal serpent, Green dragon, Red dragon, Treeface, Green Dragon X, Ethereal serpent, Boss troll, Gigantes, Thornella ,Exorsus, Metal kaiser slime, Dual duellers, Mortella, Gemon, Gripevine, Marquis de léon, Dorsal fiend, Dierantula, Atlas, King squid, Alabast dragon, Darkonium slime, Malroth, Grandpa slime, Green Dragon XY, Dragonlord, Psaro, Nimzo, Gem slime, Trauminator, Dr Snapped, Greygnarl, Mortamor, Barbarus, Orgodemir, Xenlon, Dragovian lord</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Blade Blunter Guard</td>
+    <td>Increases resistance to Blade Blunter.</td>
+    <td> </td>
+    <td>Fire II, Ice III, Rigor Mortex, Blade Blunter Ward</td>
+    </tr>
+    <tr>
+    <td>Bouncer</td>
+    <td>Bounce is constantly activated and cannot be cancelled.</td>
+    <td>Goodybag XY, Zoma, Rigor Mortex</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Close Scraper</td>
+    <td>Enables monster to survive fatal damage with 1HP.</td>
+    <td>Crabid, Goodybag X, King slime, King cure slime, Ultra slime, Canzar, Goodybag XY, Skeleton XY</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Comeback Kid</td>
+    <td>Monster will have a slim chance of being revived after dying.</td>
+    <td>Conkettes, Numen, Greygnarl</td>
+    <td>Rhapthorne II, Estark, Rigor Mortex, Canzar, Aquarion, Sagittar, Leonyx, Wormonger, Bjorn, Missing Lynx, Khalamari, Ruin, Orochi, Zenith Dragon, Empyrea, Flute Warrior, Great Godbird, Stormsgate Citadel</td>
+    </tr>
+    <tr>
+    <td>Confusing Touch</td>
+    <td>Can confuse enemies when attacking.</td>
+    <td>Dingaling, Phantom swordsman, Soulspawn, Dr Snapped</td>
+    <td>Hawkhart II</td>
+    </tr>
+    <tr>
+    <td>Confusion Guard</td>
+    <td>Increases resistance to confusion.</td>
+    <td> </td>
+    <td>Hypnotist, Fear-monger, Confusion Ward, Battle Road Master</td>
+    </tr>
+    <tr>
+    <td>Counteractivist</td>
+    <td>Counter is constantly activated and cannot be cancelled.</td>
+    <td> </td>
+    <td>Wildcard</td>
+    </tr>
+    <tr>
+    <td>Counterstriker</td>
+    <td>Monster may launch a counter-attack when attacked.</td>
+    <td>Heedoovoodoo, Bullfinch, Demonrider, Slime knight, Metal slime knight, Skeleton X, Grim rider, Rotten egg, Roseguardin, Bone baron, Shogum, Don Mole, Dhoulmagus, Skeleton XY, Trode, Nokturnus</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crack Guard</td>
+    <td>Increases resistance to Crack-type magic.</td>
+    <td> </td>
+    <td>Bang &amp; Crack III, Woosh &amp; Crack III, Crack &amp; Zap II, Crack &amp; Zap III, Crack &amp; Zam II, Crack &amp; Zam III, Crack Ward, Uber Cold Ward, Crack &amp; Sizz II, Crack &amp; Sizz III, Dual Duellers</td>
+    </tr>
+    <tr>
+    <td>Crackmeister</td>
+    <td>Boosts Crack-type magic effects while decreasing MP consumption.</td>
+    <td>Frostburn, Boreal serpent, Jailcat, Snowmangler, Skelegon, Firn fiend, Gracos, Murdaw</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Abiliterator</td>
+    <td>Reduces enemies&#39; resistance to Abiliterator. Has no effect on enemies who are impervious to Abiliterator.</td>
+    <td>Skeleton, Merman, Notso macho, Beetleboy</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Banger</td>
+    <td>Reduces enemies&#39; resistance to Bang-type magic. Has no effect on enemies who are impervious to Bang-type magic.</td>
+    <td>Spitnik, Imp, Slime knight, Noble gasbagon, Archdemon</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Blade Blunter</td>
+    <td>Reduces enemies&#39; resistance to Blade Blunter. Has no effect on enemies who are impervious to Blade Blunter.</td>
+    <td>Capsichum, Aquestrian gladiator, Metal dragon, Notso macho</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Confuser</td>
+    <td>Reduces enemies&#39; resistance to confusion. Has no effect on enemies who are impervious to confusion.</td>
+    <td>Lips, Red dragon, Abyss diver, Grim rider, Goodybag XY</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Cracker</td>
+    <td>Reduces enemies&#39; resistance to Crack-type magic. Has no effect on enemies who are impervious to Crack-type magic.</td>
+    <td>Frostburn, Snowmangler, Firn fiend, Marquis de léon</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Dance Banner</td>
+    <td>Reduces enemies&#39; resistance to Ban Dance. Has no effect on enemies who are impervious to Ban Dance.</td>
+    <td>Mud mannequin, See urchin, Heedoovoodoo, Chimaera, Bad egg</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Dazzler</td>
+    <td>Reduces enemies&#39; resistance to Dazzle-type magic. Has no effect on enemies who are impervious to Dazzle-type magic.</td>
+    <td>She-slime, Cheeky tiki, Hades condor, Gryphon, Khalamari</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Decelerater</td>
+    <td>Reduces enemies&#39; resistance to Decelerate-type magic. Has no effect on enemies who are impervious to Decelerate-type magic.</td>
+    <td>Snapdragon, Boring bug, Gold golem, Gigantes, King squid</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Devil</td>
+    <td>Reduces enemies&#39; resistance to all spells, abilities, and status ailments.</td>
+    <td>Balhib, Leonyx</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Dimmer</td>
+    <td>Reduces enemies&#39; resistance to Dim-type magic. Has no effect on enemies who are impervious to Dim-type magic.</td>
+    <td>Weaken beakon, Flyguy, Wrecktor, Gripevine</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Donker</td>
+    <td>Reduces enemies&#39; resistance to Donk-type magic. Has no effect on enemies who are impervious to Donk-type magic.</td>
+    <td>Dingaling, Dancing devil, Lesser demon, Restless armour, Barbarus</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Fire Breather</td>
+    <td>Reduces enemies&#39; resistance to Fire Breath. Has no effect on enemies who are impervious to Fire Breath.</td>
+    <td>Komodo, Firebird, Great dragon, Alabast dragon, Orochi, Orgodemir</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Fizzler</td>
+    <td>Reduces enemies&#39; resistance to Fizzle-type magic. Has no effect on enemies who are impervious to Fizzle-type magic.</td>
+    <td>Ghost, Winky, Silvapithecus, Dracolord, Hargon</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Frizzer</td>
+    <td>Reduces enemies&#39; resistance to Frizz-type magic. Has no effect on enemies who are impervious to Frizz-type magic.</td>
+    <td>Slime, Firespirit, Dancing flame, Gasbagon, Magmalice</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Gobstopper</td>
+    <td>Reduces enemies&#39; resistance to Gobstopper. Has no effect on enemies who are impervious to Gobstopper.</td>
+    <td>Bad egg, Great sabrecub, Green dragon, Buffalogre, Green Dragon XY</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Ice Breather</td>
+    <td>Reduces enemies&#39; resistance to Ice Breath. Has no effect on enemies who are impervious to Ice Breath.</td>
+    <td>Powie yowie, Sea dragon, Murdaw, Orgodemir, Great godbird</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Inactivist</td>
+    <td>Reduces enemies&#39; resistance to missing a turn. Has no effect on enemies who are reistant to missing a turn.</td>
+    <td>Nardragon, Wild boarfish, Barracuda, Killing machine, Overkilling machine, Trauminator</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Magic Drainer</td>
+    <td>Reduces enemies&#39; resistance to Drain Magic spells. Has no effect on enemies who are impervious to Drain Magic.</td>
+    <td>Healslime, Lump wizard, Drohl diabolist, Cureslime</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Magical Saboteur</td>
+    <td>Reduces enemies&#39; resistance to Magic Frailty. Has no effect on enemies who are impervious to Magic Frailty.</td>
+    <td>Shell slime, Pink sanguini</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Paralyser</td>
+    <td>Reduces enemies&#39; resistance to paralysis. Has no effect on enemies who are impervious to paralysis.</td>
+    <td>Scissor beatle, Metal slime knight, Dangler fish, Tortured soul</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Poisoner</td>
+    <td>Reduces enemies&#39; resistance to poison. Has no effect on enemies who are impervious to poison.</td>
+    <td>Dragonthorn, Funghoul, Bubble slime, Bodkin archer</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Sagger</td>
+    <td>Reduces enemies&#39; resistance to Sag-type magic. Has no effect on enemies who are impervious to Sag-type magic.</td>
+    <td>Demonrider, Eveel, Golem, Cross bones, Skeleton XY</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Sapper</td>
+    <td>Reduces enemies&#39; resistance to Sap-type magic. Has no effect on enemies who are impervious to Sap-type magic.</td>
+    <td>Anchorman, Dragon slime, Living statue, Garuda, Nimzo</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Sizzer</td>
+    <td>Reduces enemies&#39; resistance to Sizz-type magic. Has no effect on enemies who are impervious to Sizz-type magic.</td>
+    <td>Drake slime, Magic slime, Rotten egg, Exorsus</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Sleeper</td>
+    <td>Reduces enemies&#39; resistance to sleep. Has no effect on enemies who are impervious to sleep.</td>
+    <td>Bag o&#39; laughs, Bullfinch, Pan piper, Night emperor, Murdaw</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Whacker</td>
+    <td>Reduces enemies&#39; resistance to Whack-type magic. Has no effect on enemies who are impervious to Whack-type magic.</td>
+    <td>Weedie, Dorsal fiend, Psaro</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Woosher</td>
+    <td>Reduces enemies&#39; resistance to Woosh-type magic. Has no effect on enemies who are impervious to Woosh-type magic.</td>
+    <td>Dracky, Great dracky, Missing lynx, Pazuzu, Dierantula</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Zammer</td>
+    <td>Reduces enemies&#39; resistance to Zam-type magic. Has no effect on enemies who are impervious to Zam-type magic.</td>
+    <td>Hyper Heyedra, Heyedra, Fallen priest, Heligator, Rhapthorne II</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Crafty Zapper</td>
+    <td>Reduces enemies&#39; resistance to Zap-type magic. Has no effect on enemies who are impervious to Zap-type magic.</td>
+    <td>Mottle slime, Spiked hare, Green dragon, Green Dragon X, Empyrea, Green Dragon XY, Wulfspade</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Critical Massacre</td>
+    <td>Doubles the chance of landing a critical hit.</td>
+    <td>Slime, Jargon, Dessert demon, Scorpion, Weartiger, Slime X, King slime, Tyrantosaurus, Gorerilla, Mimic, Living statue, Mohawker, Mechanowyrm, Trap box, Drakulard, Slime XY, Aquarion, Dragovian lord</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Dazzle Guard</td>
+    <td>Increases resistance to Dazzle-type magic.</td>
+    <td> </td>
+    <td>Wulfspade II, Cluboon III, Dazzle Ward, Flute Warrior</td>
+    </tr>
+    <tr>
+    <td>Deadly Touch</td>
+    <td>Can send an attacked enemy to the hereafter.</td>
+    <td>Don Mole, Weedie</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Decelerate Guard</td>
+    <td>Increases resistance to Decelerate.</td>
+    <td> </td>
+    <td>Speedster, Saboteur, Dr Snapped, Agility Boost III, Decelerate Ward, Thief</td>
+    </tr>
+    <tr>
+    <td>Defence Roulette</td>
+    <td>Defence may increase or decrease in battle.</td>
+    <td> </td>
+    <td>Wind Blower</td>
+    </tr>
+    <tr>
+    <td>Desperado</td>
+    <td>Increases the chance of landing a critical hit when HP is extremely low.</td>
+    <td>Killerpillar, Winky, Cannibox, Behemoth slime, Beshemoth slime, Great argon lizard, Cross bones, Frou-frou, Chimaera XY, Psaro, Dragovian lord, Zenith dragon</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Dim Guard</td>
+    <td>Increases resistance to Dim-type magic.</td>
+    <td> </td>
+    <td>Mage Aid, Enfeebler, Antimagic, Antimagic II, Wisdom Boost III, Dim Ward</td>
+    </tr>
+    <tr>
+    <td>Disruptive Wave</td>
+    <td>Disruptive Wave may be launched automatically during battles.</td>
+    <td>Grandpa slime, Skeleton XY, Nimzo, Rhapthorne, Estark</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Donk Guard</td>
+    <td>Increases resistance to Donk-type magic.</td>
+    <td> </td>
+    <td>Bombardier, Dorsal Fiend, Donk Ward, Great Godbird</td>
+    </tr>
+    <tr>
+    <td>Double Trouble</td>
+    <td>Monster will act twice in succession when not given specific orders.</td>
+    <td>Demon-at-arms, Killing machine, Dual duellers, Schleiman tank, Stormsgate Citadel, Overkilling machine, Canzar, Ruin, Nimzo, Trauminator, Sagittar, Aquarion, Great godbird</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Drain Magic Guard</td>
+    <td>Increases resistance to Drain Magic.</td>
+    <td> </td>
+    <td>Mage Aid, Nightmare, Drain Magic Ward, Dorsal Fiend</td>
+    </tr>
+    <tr>
+    <td>Early Bird</td>
+    <td>Monster will attack first in battle.</td>
+    <td>Fencing fox, Conklave X, Great sabrecat, Barracuda, Teeny Sanguini X, Metal kaiser slime, Riptide, Ultra slime, Teeny Sanguini XYLeopoldSagittarHawkhart ace</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Escape Artist</td>
+    <td>Monster will always be able to flee from a battle.</td>
+    <td>Argon lizard, Skipper, Snail slime, Liquid metal slime, Metal king slime, Trode</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Fast Learner</td>
+    <td>Experience points received after a battle are increased by 10%. If multiple monsters in the team possess this trait, this percentage will increase.</td>
+    <td>Teeny sanguini, Dragurn, Mecha-mynah, Slime stack, Pink sanguini</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Fire Breath Guard</td>
+    <td>Increases resistance to Fire Breath.</td>
+    <td> </td>
+    <td>Fire III, Breath III, Anti-dragon, Fire Breath Ward, Uber Heat Ward</td>
+    </tr>
+    <tr>
+    <td>Fizzle Guard</td>
+    <td>Increases resistance to Fizzle-type magic.</td>
+    <td> </td>
+    <td>Antimagic, Antimagic II, Antimagic Ward</td>
+    </tr>
+    <tr>
+    <td>Fly Swatter</td>
+    <td>Prevents enemies from using Artful Dodger.</td>
+    <td>Aquestrian gladiator, Erazor blade, Cockateer, Night knight, Gemon</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Foot Dragger</td>
+    <td>Monster can occasionally refuse to listen to orders and not act.</td>
+    <td>Great sabrecat, Riptide, Ultra slime, Leopold, Hawkhart ace</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Frizz Guard</td>
+    <td>Increases resistance to Frizz-type magic.</td>
+    <td> </td>
+    <td>Frizz &amp; Bang II, Frizz &amp; Bang III, Frizz &amp; Woosh II, Frizz &amp; Woosh III, Frizz &amp; Zap II, Frizz &amp; Zap III, Frizz &amp; Zam II, Frizz &amp; Zam III, Frizz Ward, Uber Heat Ward, Frizz &amp; Sizz II, Frizz &amp; Sizz III</td>
+    </tr>
+    <tr>
+    <td>Frizzmeister</td>
+    <td>Boosts Frizz-type magic effects while decreasing MP consumption.</td>
+    <td>Wax murderer, Firespirit, She-slime, Dancing flame, Beshemoth slime, Magmalice, Great dragon, Baramos</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Genius Talent Scout</td>
+    <td>The sole learnable trait among the Talent Scout set of traits. Scout gauge will be boosted very slightly when a show of strength is launched.</td>
+    <td> </td>
+    <td>Morrie&#39;s Melange</td>
+    </tr>
+    <tr>
+    <td>Giant Killer</td>
+    <td>Monster can deal heavy damage to large monsters.</td>
+    <td>Phantom fencer, Chimaera X, Hacksaurus, Fright knight, Ultra slime, Schleiman tank, Night clubber, Chimaera XY, Leopold, Cluboon</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Gobstopper Guard</td>
+    <td>Increases resistance to Gobstopper.</td>
+    <td> </td>
+    <td>Cold Sleep, Uber Breath, Dr Snapped, Gobstopper Ward</td>
+    </tr>
+    <tr>
+    <td>Gold Getter</td>
+    <td>The amount of gold coins received after a battle is increased by 20%. If multiple monsters in the team possess this trait, this percentage will increase.</td>
+    <td>Goodybag, Goodybag X, Maniacal Mole, Balhib</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Grand Slammer</td>
+    <td>Attacks strike all enemies and damage dealt by skills and abilities increases.</td>
+    <td>Wormonger, Missing lynx, Bjorn, Schleiman tank, Stormsgate Citadel, Empyrea, Canzar, Khalamari, Ruin, Orochi, Sagittar, Aquarion, Estark, Rhapthorne II, Great godbird, Zenith dragon, Leonyx, Rigor Mortex</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Health Professional</td>
+    <td>Boosts healing spell effects while decreasing MP consumption.</td>
+    <td>Weedie, Healslime,See urchin, Lump wizard, Orc, Angel slime, Cureslime, King cureslime, Thornella, Boh, Malroth</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Heckling Hector</td>
+    <td>When an enemy&#39;s tension increases in battle, all foes&#39; tension will automatically decrease.</td>
+    <td>Dancing devil, Paws, Skeleton X, Dark slime, Stark raven, Mortella, Bone baron, Trode</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Hit Squad</td>
+    <td>Monster can launch multiple attacks in succession.</td>
+    <td>Swarmtroop, Platypunk, Conklave, Great sabrecub, Weaken beakon, Chimaera, Powie yowie, Chainine, Shadow, Hyper Heyedra, Cross eye, Weartiger, Chimaera X, Conklave X, Hacksaurus, Great sabrecat, Slime stack, Treeface, Malevolamp, Paws, Jumping jackal, Robbin&#39; Huddle, Heyedra, Yabby, Magic slime, Tyrantosaurus, Giant moth, Soulspawn, Boss troll, Bjorn, Demon-at-arms, Thornella, Dhuran, Conkettes, Dual duellers, Riptide, Mortella, Gripevine, Marquis de léon, Empyrea, King squid, Overkilling machine, Darkonium slime, Baramos, Hargon, Malroth, Canzar, Khalamari, Dhoulmagus, Chimaera XY, Conklave XY, Gem slime, Orochi, Dr Snapped, Sagittar, Mortamor, Orgodemir, Nokturnus, Estark, Rhapthorne II, Great godbird, Hawkhart ,Wulfspade ace, Cluboon ace, Diamagon ace, Ace of Spades, Wildcard, Zenith dragon, Leonyx</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Hopeful Hitter</td>
+    <td>Attacks often miss the mark, but can deliver critical hits.</td>
+    <td>Atlas, Ruin</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>HP Gambit</td>
+    <td>HP increases to 1.5 times its maximum in battle, but attack and defence are both reduced to 1.</td>
+    <td> </td>
+    <td>Bjorn</td>
+    </tr>
+    <tr>
+    <td>HP Roulette</td>
+    <td>Maximum HP may increase or decrease in battle.</td>
+    <td> </td>
+    <td>Boom Boxer</td>
+    </tr>
+    <tr>
+    <td>Ice Breath Guard</td>
+    <td>Increases resistance to Ice Breath.</td>
+    <td> </td>
+    <td>Ice III, Breath III, Anti-dragon, Ice Breath Ward, Uber Cold Ward</td>
+    </tr>
+    <tr>
+    <td>Imposing</td>
+    <td>The monster&#39;s imposing presence can immobilise enemies at the start of a battle.</td>
+    <td>Missing lynx, Gorerilla, Bjorn, Dhuran, Robbin&#39; Hood, Nemeslime</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Inaction Guard</td>
+    <td>Decreases chance of missing a turn.</td>
+    <td> </td>
+    <td>Fear-monger, Cluboon II, Inaction Ward, Flute Warrior</td>
+    </tr>
+    <tr>
+    <td>Intimidating</td>
+    <td>Can intimidate enemies and immobilise them at the start of a battle.</td>
+    <td>Boss troll, Drakularge, Drakulard, Prince o&#39; Thieves, Barbarus, Nokturnus</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Last Word</td>
+    <td>Monster will attack last in battle.</td>
+    <td>Gasbagon, Bjorn, Gigantes, Schleiman tank, Stormsgate Citadel, Night clubber, Darkonium slime, Ruin</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Late Riser</td>
+    <td>Monster may occasionally fall asleep at the start of battle.</td>
+    <td>Cross eye, Wormonger</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Lootist</td>
+    <td>The chance of receiving items after a battle is increased. If multiple monsters in the team possess this trait, this chance will increase further.</td>
+    <td>Mischievous mole, Cannibox, Cyber slime, Maniacal Mole</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Magic Miser</td>
+    <td>Reduces MP consumption to 3/4.</td>
+    <td> </td>
+    <td>Frizz Ward, Bang Ward, Woosh Ward, Crack Ward, Zap Ward, Zam Ward, Sag Ward, Sap Ward, Decelerate Ward, Dim Ward, Fire Breath Ward, Ice Breath Ward, Sizz Ward, Donk Ward</td>
+    </tr>
+    <tr>
+    <td>Magic Regenerator</td>
+    <td>Monster recovers a little MP each time it acts in battle.</td>
+    <td>Red dragon, Megalodon, Wight king, Grandpa slime, Mortamor</td>
+    <td>Aquapothecary, Hawkhart, Dual Duellers, Leonyx, Abiliterator Ward</td>
+    </tr>
+    <tr>
+    <td>Magic Scrooge</td>
+    <td>Reduces MP consumption to 1/2.</td>
+    <td> </td>
+    <td>Frizz Ward, Bang Ward, Woosh Ward, Crack Ward, Zap Ward, Zam Ward, Sag Ward, Sap Ward, Decelerate Ward, Dim Ward, Fire Breath Ward, Ice Breath Ward, Sizz Ward, Magical Sabotage Ward, Donk Ward</td>
+    </tr>
+    <tr>
+    <td>Magical Sabotage Guard</td>
+    <td>Increases resistance to Magic Frailty and Spooky Aura.</td>
+    <td> </td>
+    <td>Exorsus, Mortella, Empyrea, Magical Sabotage Ward</td>
+    </tr>
+    <tr>
+    <td>Master of Weapons</td>
+    <td>Allows monster to equip every type of weapon.</td>
+    <td> </td>
+    <td>Cluboon, Captain Crow, Warrior, Wonder Construction, Battle Road Master</td>
+    </tr>
+    <tr>
+    <td>Metal Beater</td>
+    <td>Damage inflicted on enemies with metal bodies will increase by 1 point.</td>
+    <td>Headhunter, Hunter mech, Night knight, Headhunter, Harmour, Hunter mech, Erazor blade, Fright knight, Balhib, Night knight, Diamagon</td>
+    <td>Anti-metal, Bounty Hunter, Diamagon, Flute Warrior</td>
+    </tr>
+    <tr>
+    <td>Metal Body</td>
+    <td>Cuts damage sustained from enemy attacks to 1/3.</td>
+    <td>Metal slime, Liquid metal slime, Metal kaiser slime, Metal king slime, Darkonium slime, Gem slime</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>MP Gambit</td>
+    <td>MP increases to 2 times its maximum in battle, but attack and wisdom are both reduced to 1.</td>
+    <td> </td>
+    <td>Great Godbird</td>
+    </tr>
+    <tr>
+    <td>MP Roulette</td>
+    <td>Maximum MP may increase or decrease in battle.</td>
+    <td> </td>
+    <td>Dark Knight</td>
+    </tr>
+    <tr>
+    <td>Paralysing</td>
+    <td>Monster may inflict paralysis on enemies upon being attacked.</td>
+    <td>Wild boarfish, Wormonger, Cyber slime, Giant moth, Mechanowyrm</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Paralysing Touch</td>
+    <td>Can paralyse enemies when attacking.</td>
+    <td>Hell hornet, Scorpion, Skeleton soldier, Mortella</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Paralysis Guard</td>
+    <td>Increases resistance to paralysis.</td>
+    <td> </td>
+    <td>Toxifier, Diamagon II, Paralysis Ward, Wildcard, Stormsgate Citadel</td>
+    </tr>
+    <tr>
+    <td>Perilous Parrier</td>
+    <td>Monster will usually sustain more damage, but will occasionally take none.</td>
+    <td>Rubble slime, Metal dragon, Stormsgate Citadel, Trap box, Rigor Mortex</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Poison Guard</td>
+    <td>Increases resistance to poison.</td>
+    <td> </td>
+    <td>Toxifier, Bad Breath, Poison Ward, Battle Road Master</td>
+    </tr>
+    <tr>
+    <td>Poisonous</td>
+    <td>Monster may inflict poison on enemies upon being attacked.</td>
+    <td>Bubble slime, Wormonger, Walking corpse, King bubble slime, Wight king, Dr Snapped</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Poisonous Touch</td>
+    <td>Can poison enemies when attacking.</td>
+    <td>Mental pitcher, Eveel, Lethal armour, Dual duellers</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Pro Talent Scout</td>
+    <td>Scout gauge will be boosted considerably when a show of strength is launched.</td>
+    <td>Mimic, Fluffy</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Psycho</td>
+    <td>Allows monsters to psyche up in battle.</td>
+    <td>Mischievous mole, Scissor beatle, Hammerhood, Rockbomb, Wild slime, Nardragon, Spiked hare, Hellhound, Gold golem, Behemoth slime, Brownie, Restless armour, Golem, Beetleboy, Dark slime knight, Buffalogre, Conkettes, Moosifer, Beetlebully, Robbin&#39; Hood, Dullahan, Alabast dragon, Captain Crow, Khalamari, Dhoulmagus, Conklave XY, Dragonlord, Trode, Aquarion, Wulfspade, Hawkhart, Cluboon, Diamagon, Wulfspade ace, Hawkhart ace, Cluboon ace, Diamagon ace</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Rabble Rouser</td>
+    <td>Can increase tension of all allies at the start of a battle.</td>
+    <td>Capsichum, King kelp, Malevolamp, Wailin&#39; weed, Captain Crow, Teeny Sanguini XY, Fluffy, Diamagon</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Sag Guard</td>
+    <td>Increases resistance to Sag-type magic.</td>
+    <td> </td>
+    <td>Breath II, Champion, Enfeebler, Berserker, Attack Boost III, Sag Ward</td>
+    </tr>
+    <tr>
+    <td>Sap Guard</td>
+    <td>Increases resistance to Sap-type magic.</td>
+    <td> </td>
+    <td>Defender, Saboteur, Bolsterer, Barricade, Defence Boost III, Sap Ward</td>
+    </tr>
+    <tr>
+    <td>Scare Stare</td>
+    <td>Can unnerve enemies with a piercing stare and immobilise them at the start of a battle.</td>
+    <td>Gemon, Dierantula, Black dragon, Dracolord</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Sizz Guard</td>
+    <td>Increases resistance to Sizz-type magic.</td>
+    <td> </td>
+    <td>Frizz &amp; Sizz III, Bang &amp; Sizz III, Woosh &amp; Sizz III, Crack &amp; Sizz III, Sizz &amp; Zap II, Sizz &amp; Zap III, Sizz &amp; Zam II, Sizz &amp; Zam III, Sizz Ward, Exorsus</td>
+    </tr>
+    <tr>
+    <td>Sizzmeister</td>
+    <td>Boosts Sizz-type magic effects while decreasing MP consumption.</td>
+    <td>Mental pitcher, Dangler fish, Magic slime, Exorsus, Moosifer, Baramos</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Sleep Guard</td>
+    <td>Increases resistance to sleep.</td>
+    <td> </td>
+    <td>Hypnotist, Nightmare, Cold Sleep, Sleep Ward</td>
+    </tr>
+    <tr>
+    <td>Sleepy Touch</td>
+    <td>Can put enemies to sleep with a successful attack.</td>
+    <td>Mummy boy, Pan piper, Malroth</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Steady Recovery</td>
+    <td>Monster recovers a little HP each time it acts in battle.</td>
+    <td>Treeface, Hargon, Dragonlord, Dragovian lord</td>
+    <td>Slimer, Wulfspade, Whack Ward, Poison Ward, Gobstopper Ward, Paralysis Ward</td>
+    </tr>
+    <tr>
+    <td>Strangely Alluring</td>
+    <td>Can dazzle enemies and immobilise them at the start of a battle.</td>
+    <td>Jailcat, Teeny sanguini, Khalamari kid, Teeny Sanguini X, Pink sanguini</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Tactical Genius</td>
+    <td>Monster will carry out an action 1-3 times in a row when not given specific orders.</td>
+    <td>Atlas, Green Dragon XY, Orochi, Xenlon, Estark, Zenith dragon, Rigor Mortex</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Tactical Trooper</td>
+    <td>Monster will carry out an action once or twice in a row when not given specific orders.</td>
+    <td>Slime X, Hunter mech, Green Dragon X, Ethereal serpent, Jamirus, Roseguardin, Belial, Empyrea, Shogum, Nemeslime, Baramos, Slime XY, Conklave XY, Prince o&#39; Thieves, Zoma, Rhapthorne II, Leonyx</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Talent Scout</td>
+    <td>Scout gauge can be boosted when a show of strength is launched.</td>
+    <td>Satyr, Conklave, Shell slime</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Timid</td>
+    <td>Monster can occasionally become excessively timid and refuse to act.</td>
+    <td>Fencing fox, Barracuda, Metal kaiser slime, Moosifer</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Wave of Relief</td>
+    <td>Wave of Relief may be launched automatically during battles.</td>
+    <td>Diemon, Teeny Sanguini XY, Numen, Wildcard</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Whack Guard</td>
+    <td>Increases resistance to Whack-type magic.</td>
+    <td> </td>
+    <td>Assassin, Cursader, Graveheart, Whack Ward</td>
+    </tr>
+    <tr>
+    <td>Wisdom Roulette</td>
+    <td>Wisdom may increase or decrease in battle.</td>
+    <td> </td>
+    <td>White Knight</td>
+    </tr>
+    <tr>
+    <td>Woosh Guard</td>
+    <td>Increases resistance to Woosh-type magic.</td>
+    <td> </td>
+    <td>Frizz &amp; Woosh III, Bang &amp; Woosh III, Woosh &amp; Crack II, Woosh &amp; Crack III, Woosh &amp; Zap II, Woosh &amp; Zap III, Woosh &amp; Zam II, Woosh &amp; Zam III, Woosh Ward, Uber Windblast Ward, Woosh &amp; Sizz II, Woosh &amp; Sizz III</td>
+    </tr>
+    <tr>
+    <td>Wooshmeister</td>
+    <td>Boosts Woosh-type magic effects while decreasing MP consumption.</td>
+    <td>Wrecktor, Diemon, Gracos, Dorsal fiend, Pazuzu</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Yellow-belly</td>
+    <td>Monster may occasionally become flustered and unable to act.</td>
+    <td>Goodybag, Metal slime, Conklave X, Robbin&#39; Huddle, Teeny Sanguini X, Teeny Sanguini XY</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Zam Guard</td>
+    <td>Increases resistance to Zam-type magic.</td>
+    <td> </td>
+    <td>Frizz &amp; Zam III,Bang &amp; Zam II, Bang &amp; Zam III, Woosh &amp; Zam III, Crack &amp; Zam III, Cursader, Zam Ward, Uber Darklight Ward, Sizz &amp; Zam III</td>
+    </tr>
+    <tr>
+    <td>Zammeister</td>
+    <td>Boosts Zam-type magic effects while decreasing MP consumption.</td>
+    <td>Skelegon, Shadow, Dark slime, Fallen priest, Dark slime knight, Black dragon, Dhoulmagus, Ace of Spades</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>Zap Guard</td>
+    <td>Increases resistance to Zap-type magic.</td>
+    <td> </td>
+    <td>Frizz &amp; Zap III, Bang &amp; Zap III, Woosh &amp; Zap III, Crack &amp; Zap III, Crusader, Cleric, Zap Ward, Uber Darklight Ward, Sizz &amp; Zap III</td>
+    </tr>
+    <tr>
+    <td>Zapmeister</td>
+    <td>Boosts Zap-type magic effects while decreasing MP consumption.</td>
+    <td>Slime XY, Greygnarl, Xenlon</td>
+    <td> </td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- DataTables JS and jQuery -->
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+<!-- External JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>

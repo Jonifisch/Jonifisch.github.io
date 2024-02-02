@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Items - Joker 2</title>
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+
+  <!-- External CSS file -->
+  <link rel="stylesheet" type="text/css" href="joker2.css">
+</head>
+<body>
+  <div align="left">
+    <a href="/index.html">
+        Return to Index
+    </a>
+</div>
+<div align="center">
+    
+<img align="center" src="Dragon_Quest_Monsters_Joker_2_Logo.jpg" alt="Dragon Quest Monsters Joker 2" Height="150" Width="324">
+<h1>
+List of all Items
+</h1>
+</img>
+</div>
+<!-- Search bar -->
+<div id="search-container">
+  <input type="text" id="search-input" onkeyup="filterTable()" placeholder="Search...">
+</div>
+
+<!-- Table -->
+<table id="data-table" border="1">
+    <thead>
+        <tr><th>ID</th>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Effect</th>
+            <th>Price</th>
+            <th>Upgrades required</th>
+            <th>How to obtain</th>
+            </tr></thead>
+            <tbody><tr>
+            <td align="center">1</td>
+            <td>Consumable</td>
+            <td>Medicinal herb</td>
+            <td>Restores 30 HP to a single ally.</td>
+            <td align="center">8</td>
+            <td>None</td>
+            <td>Heal Slime, Stump chump(1/16); Slime, Muddy hand, Conklave, Drohl drone, Firespirit, Platypunk, Hades condor(1/32); Cheeky tiki(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">2</td>
+            <td>Consumable</td>
+            <td>Strong medicine</td>
+            <td>Restores 60 HP to a single ally.</td>
+            <td align="center">50</td>
+            <td>3 (7 Machine parts)</td>
+            <td>Jailcat, Angel slime(1/16); Crabid(1/32); See urchin(1/64); Heedoovoodoo(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">3</td>
+            <td>Consumable</td>
+            <td>Special medicine</td>
+            <td>Restores 120 HP to a single ally.</td>
+            <td align="center">250</td>
+            <td>5 (16 Machine parts)</td>
+            <td>mimic(1/16); Drake slime, Slime, Behemoth slime(1/32); Cure slime, Gryphon, King slime(1/64); Hades condor(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">4</td>
+            <td>Consumable</td>
+            <td>Multi medicine</td>
+            <td>Restores 30 HP to all allies.</td>
+            <td align="center">600</td>
+            <td>7 (34 Machine parts)</td>
+            <td>Slime, Behemoth slime, Moosifer(1/32); Cure slime(1/64); Walking corpse(1/128): Firespirit(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">5</td>
+            <td>Consumable</td>
+            <td>Amor seco essence</td>
+            <td>Restores around 40 HP to all allies.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Mottle slime(1/16)</td>
+            </tr>
+            <tr>
+            <td align="center">6</td>
+            <td>Consumable</td>
+            <td>Yggdrasil dew</td>
+            <td>Restores around 100 HP to all allies.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Firebird, Soulspawn, Slime stack(1/128); King squid(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">7</td>
+            <td>Consumable</td>
+            <td>Magic Elixir</td>
+            <td>Restores 30 MP to a single ally.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Bag o' laughs, Dancing devil, Satyr, Goodybag, Khalamari kid, King kelp, Bodkin archer(1/64); Mud mannequin(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">8</td>
+            <td>Consumable</td>
+            <td>Sage's elixir</td>
+            <td>Restores 90 MP to a single ally.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Skeleton soldier(1/64); Lesser demon(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">9</td>
+            <td>Consumable</td>
+            <td>Elfin elixir</td>
+            <td>Fully restores the MP of a single ally.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Phantom swordsman(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">10</td>
+            <td>Consumable</td>
+            <td>Yggdrasil leaf</td>
+            <td>A mystical leaf that resurrects a single fallen ally.</td>
+            <td align="center">1500</td>
+            <td>5 (16 Machine parts)</td>
+            <td>Mimic(1/32); Cannibox(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">11</td>
+            <td>Consumable</td>
+            <td>Seed of skill</td>
+            <td>Allocates 3 skill poins to a single ally.</td>
+            <td align="center">1000</td>
+            <td>11 (162 Machine parts)</td>
+            <td>Hyper Heyedra(1/8); Boss: Tall tail(1/32); Gripevine(1/128); Waliking corpse, Gemon(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">12</td>
+            <td>Consumable</td>
+            <td>Seed of life</td>
+            <td>Permanently increases the maximum HP of a single ally by 2-4 points.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Boss: Bjorn(1/32); King slime, Living statue, Argon lizard, Great argon lizard(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">13</td>
+            <td>Consumable</td>
+            <td>Seed of magic</td>
+            <td>Permanently increases the maximum MP of a single ally by 2-4 points.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Eugene's Gripevine, Eugene's Slime(1/8); Imp, Firespirit, King bubble slime(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">14</td>
+            <td>Consumable</td>
+            <td>Seed of strength</td>
+            <td>Permanently increases the attack power of a single ally by 1-2 points.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Green dragon(1/8); Boss: Khalamari(1/32); Gorerilla(1/128); Barracuda, Pinky sanguini, Gigantes, Boss troll(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">15</td>
+            <td>Consumable</td>
+            <td>Seed of defence</td>
+            <td>Permanently increases the defence of a single ally by 1-2 points.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Conklave(1/8); Boss: Wormonger(1/32); Meddle slime, Metal slime, Liquid metal slime, Metal kaiser slime, Scissor beatle, Shelll slime, Firn fiend, Magma malice, Teeny sanguini(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">16</td>
+            <td>Consumable</td>
+            <td>Seed of agility</td>
+            <td>Permanently increases the agility of a single ally by 1-2 points.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Eugene's Alabast dragon(1/8); Boss: Missing lynx, Boss: Hellhound(1/32); Meddle slime, Metal slime, Liquid metal slime, Metal kaiser slime, Teeny sanguini(1/128); Weaken beakon(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">17</td>
+            <td>Consumable</td>
+            <td>Seed of wisdom</td>
+            <td>Permanently increases the wisdom of a single ally by 1-2 points.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Eugene's Metal slime(1/8); Boss: Empyrea(1/32); Pink sanguini(1/128); Mental pitcher, Gargoyle(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">18</td>
+            <td>Consumable</td>
+            <td>Book of Wulfspade</td>
+            <td>A book that bestows the Wulfspade skill.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Wulfspade ace(1/1)</td>
+            </tr>
+            <tr>
+            <td align="center">19</td>
+            <td>Consumable</td>
+            <td>Book of Hawkhart</td>
+            <td>A book that bestows the Hawkhart skill.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Hawkhart ace(1/1)</td>
+            </tr>
+            <tr>
+            <td align="center">20</td>
+            <td>Consumable</td>
+            <td>Book of Diamagon</td>
+            <td>A book that bestows the Diamagon skill.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Diamagon ace(1/1)</td>
+            </tr>
+            <tr>
+            <td align="center">21</td>
+            <td>Consumable</td>
+            <td>Book of Cluboon</td>
+            <td>A book that bestows the Cluboon skill.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Cluboon ace(1/1)</td>
+            </tr>
+            <tr>
+            <td align="center">22</td>
+            <td>Consumable</td>
+            <td>Warrior's scroll</td>
+            <td>A scroll that bestows the Warrior skill.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Demon-at-arms(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">23</td>
+            <td>Consumable</td>
+            <td>Mage's scroll</td>
+            <td>A scroll that bestows the Mage skill.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Eugene's Killerpillar(1/128); Archdemon(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">24</td>
+            <td>Consumable</td>
+            <td>Priest's scroll</td>
+            <td>A scroll that bestows the Priest skill.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Eugene's Night clubber(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">25</td>
+            <td>Consumable</td>
+            <td>Martial artist's scroll</td>
+            <td>A scroll that bestows the Martial Artist skill.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Eugene's Komodo(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">26</td>
+            <td>Consumable</td>
+            <td>Sage's scroll</td>
+            <td>A scroll that bestows the Sage skill.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Eugene's Ultra slime(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">27</td>
+            <td>Consumable</td>
+            <td>Thief's scroll</td>
+            <td>A scroll that bestows the Thief skill.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Eugene's Riptide(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">28</td>
+            <td>Consumable</td>
+            <td>'The Healing Touch'</td>
+            <td>A scroll that bestows the Healer skill.</td>
+            <td align="center">3000</td>
+            <td>10 (114 Machine parts)</td>
+            <td> </td>
+            </tr>
+            <tr>
+            <td align="center">29</td>
+            <td>Consumable</td>
+            <td>'Head Over Heals'</td>
+            <td>A scroll that bestows the Cure-all skill.</td>
+            <td align="center">5000</td>
+            <td>11 (162 Machine parts)</td>
+            <td> </td>
+            </tr>
+            <tr>
+            <td align="center">30</td>
+            <td>Consumable</td>
+            <td>'Secret Sorcery'</td>
+            <td>A scroll that bestows the Mage Aid skill.</td>
+            <td align="center">3000</td>
+            <td>10 (114 Machine parts)</td>
+            <td> </td>
+            </tr>
+            <tr>
+            <td align="center">31</td>
+            <td>Consumable</td>
+            <td>'Brawn over Brains'</td>
+            <td>A scroll that bestows the Attack Boost skill.</td>
+            <td align="center">2000</td>
+            <td>9 (78 Machine parts)</td>
+            <td>Silvapithecus, Octavian sentry(1/64)</td>
+            </tr>
+            <tr>
+            <td align="center">32</td>
+            <td>Consumable</td>
+            <td>'Duck and Cover'</td>
+            <td>A scroll that bestows the Defence Boost skill.</td>
+            <td align="center">2000</td>
+            <td>9 (78 Machine parts)</td>
+            <td>Snail slime, Spiked hare, Angel slime, Crabid(1/64)</td>
+            </tr>
+            <tr>
+            <td align="center">33</td>
+            <td>Consumable</td>
+            <td>'Life  in the Fast Lane'</td>
+            <td>A scroll that bestows the Agility Boost skill.</td>
+            <td align="center">2000</td>
+            <td>8 (52 Machine parts)</td>
+            <td>See urchin, Gargoyle(1/64)</td>
+            </tr>
+            <tr>
+            <td align="center">34</td>
+            <td>Consumable</td>
+            <td>'Knowledge is Power'</td>
+            <td>A scroll that bestows the Wisdom Boost skill.</td>
+            <td align="center">2000</td>
+            <td>8 (52 Machine parts)</td>
+            <td>Firespirit, Jailcat(1/64)</td>
+            </tr>
+            <tr>
+            <td align="center">35</td>
+            <td>Consumable</td>
+            <td>'Positive Puller'</td>
+            <td>Lures {+} monsters into battle. The effect wears off after battle.</td>
+            <td align="center">1500</td>
+            <td>3 (7 Machine parts)</td>
+            <td>Mummy boy, Puppeteer(1/64); Night emperor(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">36</td>
+            <td>Consumable</td>
+            <td>'Think Negative'</td>
+            <td>Lures {-} monsters into battle. The effect wears off after battle.</td>
+            <td align="center">1650</td>
+            <td>3 (7 Machine parts)</td>
+            <td>Puppeteer(1/64); Frog face(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">37</td>
+            <td>Consumable</td>
+            <td>'Neutral Ground'</td>
+            <td>Lures {±} monsters into battle. The effect wears off after battle.</td>
+            <td align="center">3150</td>
+            <td>7 (34 Machine parts)</td>
+            <td>Moosifer(1/32); Dark slime(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">38</td>
+            <td>Consumable</td>
+            <td>Metal ticket</td>
+            <td>Use this special ticket to travel to the metal menagerie. Just don't waste it by using it while the metal menagerie is accessible.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Boss: Gemon, Boss: Khalimari, Boss; Sagittar(1/1); Metal kaiser slime, Hunter mech(1/32); Wild slime, Dark slime, bona constrictor(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">39</td>
+            <td>Consumable</td>
+            <td>Antidotal herb</td>
+            <td>Cures a single ally of the effects of poison.</td>
+            <td align="center">10</td>
+            <td>None</td>
+            <td>Boss: Hyper hyedra(1/1); Funghoul. Eveel, King bubble slime(1/16); Walking corpse, Frog face, Scorpion(1/32)</td>
+            </tr>
+            <tr>
+            <td align="center">40</td>
+            <td>Consumable</td>
+            <td>Moonwort bulb</td>
+            <td>Cures a single ally of the effects of paralysis.</td>
+            <td align="center">30</td>
+            <td>1 (1 Machine part)</td>
+            <td>Wild boarfish, Gripevine(1/16); Hell hornet, Swarm troop, Scorpion(1/32); Dragon slime(1/64)</td>
+            </tr>
+            <tr>
+            <td align="center">41</td>
+            <td>Consumable</td>
+            <td>Smelling salts</td>
+            <td>Cures a single ally of the effects of sleep and confusion.</td>
+            <td align="center">80</td>
+            <td>1 (1 Machine part)</td>
+            <td>Satyr, Lesser demon(1/64)</td>
+            </tr>
+            <tr>
+            <td align="center">42</td>
+            <td>Consumable</td>
+            <td>Panacea</td>
+            <td>Cures a single ally of the effects of posion, paralysis, sleep and confusion.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Ethereal serpent(1/16); Mummy boy, Hell hornet(1/32); Eveel, Yabby(1/128); Chimaera, Dierantula(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">43</td>
+            <td>Consumable</td>
+            <td>Timbrel of Tension</td>
+            <td>Increases the team's level of tension.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>King kelp, Gemon(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">44</td>
+            <td>Consumable</td>
+            <td>Antimagic Powder</td>
+            <td>Enchanted dust used to seal an enemy's magic.</td>
+            <td align="center">100</td>
+            <td>4 (11 Machine parts)</td>
+            <td>Merman(1/32); Shadow, Gryphon(1/64)</td>
+            </tr>
+            <tr>
+            <td align="center">45</td>
+            <td>Consumable</td>
+            <td>Oomph Powder</td>
+            <td>Greatly increases the attack power of a single ally for 2 to 5 turns.</td>
+            <td align="center">900</td>
+            <td>4 (11 Machine parts)</td>
+            <td>Imp(1/64); Barracuda(1/128);  Night emperor(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">46</td>
+            <td>Consumable</td>
+            <td>Wizard's Penny</td>
+            <td>Increases one ally's resistance to magic.</td>
+            <td align="center">310</td>
+            <td>2 (5 Machine parts)</td>
+            <td>Goody bag(1/64)</td>
+            </tr>
+            <tr>
+            <td align="center">47</td>
+            <td>Consumable</td>
+            <td>Wizard's shilling</td>
+            <td>Increases all allies' resistance to enemy magic.</td>
+            <td align="center">960</td>
+            <td>7 (34 Machine parts)</td>
+            <td>Silvapithecus, Goody bag, Gold golem(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">48</td>
+            <td>Consumable</td>
+            <td>Insulade</td>
+            <td>Increases one ally's resistance to fire and ice breath attacks.</td>
+            <td align="center">350</td>
+            <td>2 (5 Machine parts)</td>
+            <td>Dancing flame(1/32); Argon liazd(1/32); Seasaur(1/128); Snowbird(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">49</td>
+            <td>Consumable</td>
+            <td>Jumbo insulade</td>
+            <td>Increases all allie's resistance to fire and ice breath attacks.</td>
+            <td align="center">1050</td>
+            <td>3 (7 Machine parts)</td>
+            <td>Dancing flame(1/32); Great argon lizard(1/128); Skelegon(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">50</td>
+            <td>Consumable</td>
+            <td>Sag powder</td>
+            <td>Greatly decreases the attack power of a single ally for 2 to 5 turns.</td>
+            <td align="center">900</td>
+            <td>4 (11 Machine parts)</td>
+            <td>Skeleton(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">51</td>
+            <td>Consumable</td>
+            <td>Sapperine</td>
+            <td>Greatly decreases the defence of a single ally for 4 to 7 turns.</td>
+            <td align="center">900</td>
+            <td>5 (16 Machine parts)</td>
+            <td>Snail slime(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">52</td>
+            <td>Consumable</td>
+            <td>Deceleratonic</td>
+            <td>Greatly decreases the agility of a single ally for 4 to 7 turns.</td>
+            <td align="center">900</td>
+            <td>5 (16 Machine parts)</td>
+            <td>Dierantula(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">53</td>
+            <td>Consumable</td>
+            <td>Dimium</td>
+            <td>Greatly decreases the wisdom of a single ally for 4 to 7 turns.</td>
+            <td align="center">900</td>
+            <td>5 (16 Machine parts)</td>
+            <td>Boss: Baby bjorn(1/1); Skeleton(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">54</td>
+            <td>Consumable</td>
+            <td>Bufferine</td>
+            <td>Greatly decreases the increases of a single ally for 4 to 7 turns.</td>
+            <td align="center">900</td>
+            <td>6 (23 Machine parts)</td>
+            <td>Mecha-Mynah(1/32); Shell slime(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">55</td>
+            <td>Consumable</td>
+            <td>Acceleratonic</td>
+            <td>Greatly increases the agility of a single ally for 4 to 7 turns.</td>
+            <td align="center">900</td>
+            <td>6 (23 Machine parts)</td>
+            <td>Mecha-Mynah(1/64)</td>
+            </tr>
+            <tr>
+            <td align="center">56</td>
+            <td>Consumable</td>
+            <td>Pingium</td>
+            <td>Greatly increases the wisdom of a single ally for 4 to 7 turns.</td>
+            <td align="center">900</td>
+            <td>6 (23 Machine parts)</td>
+            <td>Heyedra(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">57</td>
+            <td>Consumable</td>
+            <td>Monster Manure</td>
+            <td>Smells horific, but you fling it at enemies in battle. Will only inflict 0 or 1 point of damage on a single enemy, but it works well against foes with metal bodies.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Chimaera(1/16); Dracky(1/64)</td>
+            </tr>
+            <tr>
+            <td align="center">58</td>
+            <td>Consumable</td>
+            <td>Pretty pebble</td>
+            <td>Pebbles for throwing in battle. Only deal between 0 and 1 damage to a single enemy, but are effective against metallic monsters.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Rubble slime(1/32)</td>
+            </tr>
+            <tr>
+            <td align="center">59</td>
+            <td>Consumable</td>
+            <td>Pinball</td>
+            <td>Hard Stones for throwing in battle. Only deal between 1 and 3 damage to a single enemy, but are effective against metallic monsters.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Cyber slime(1/64); Rubble slime(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">60</td>
+            <td>Consumable</td>
+            <td>Rockbomb shard</td>
+            <td>Hard Stones for throwing in battle. Reduces the HP of a single enemy to 1.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Magmalice, Pazuzu(1/32); Rockbomb(1/64)</td>
+            </tr>
+            <tr>
+            <td align="center">61</td>
+            <td>Consumable</td>
+            <td>Mistake medicine</td>
+            <td>Inflicts a status ailment to single foe.</td>
+            <td align="center">600</td>
+            <td>4 (11 Machine parts)</td>
+            <td>Soulspawn(1/16); Bona constrictor(1/32); Wax murderer(1/64);</td>
+            </tr>
+            <tr>
+            <td align="center">62</td>
+            <td>Consumable</td>
+            <td>Beastie bites</td>
+            <td>Monsters love this tasty meal and it increases the chances of scouting them.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Bjorn(1/64); Heligator, Thornella, Mortella, Dual duellers, Dorsal fiend, Exorsus, Marquis de léon, Canzar(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">63</td>
+            <td>Consumable</td>
+            <td>Bronze bit</td>
+            <td>An item that should be worth a few gold coins.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Boss: Maniacal mole(1/1); Golem(1/32); Spitnik(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">64</td>
+            <td>Consumable</td>
+            <td>Silver sliver</td>
+            <td>An item that should be worth a a good amount of gold coins.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Nardragon(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">65</td>
+            <td>Consumable</td>
+            <td>Gold nugget</td>
+            <td>A heavy chunk of solid gold.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Wormonger(1/64); Mimic(1/128); Gold golem, Drakularge(1/256)</td>
+            </tr>
+            <tr>
+            <td align="center">66</td>
+            <td>Key</td>
+            <td>Loyalty card</td>
+            <td>Allows you to purchase goods at lower prices.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td> </td>
+            </tr>
+            <tr>
+            <td align="center">67</td>
+            <td>Key</td>
+            <td>Scout ring</td>
+            <td>An essential accessory for any monster scout, this ring allows its wearer to scout monsters and add them to their team.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td> </td>
+            </tr>
+            <tr>
+            <td align="center">68</td>
+            <td>Key</td>
+            <td>Mysterious medal</td>
+            <td>A large medal with a lion's face engraved on it.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td> </td>
+            </tr>
+            <tr>
+            <td align="center">69</td>
+            <td>Key</td>
+            <td>Soggy letter</td>
+            <td>A sligthly soggy letter received from the slime outside the moles' base.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td> </td>
+            </tr>
+            <tr>
+            <td align="center">70</td>
+            <td>Key</td>
+            <td>Bemusoleum key</td>
+            <td>A key granting access to the Bemusoleum.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td> </td>
+            </tr>
+            <tr>
+            <td align="center">71</td>
+            <td>Key</td>
+            <td>Medal of Merit</td>
+            <td>The medal that the bearer the right to compete in the last stage of the moles's Monster Scout Challenge,</td>
+            <td align="center"></td>
+            <td> </td>
+            <td> </td>
+            </tr>
+            <tr>
+            <td align="center">72</td>
+            <td>Key</td>
+            <td>Machine parts</td>
+            <td>Bears the same logo as the item vendor on board the Albatross.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td>Boss: Tentickle, Boss: Jamirus, Boss: Overkilling machine(1/1); Paws, Killing machine(1/8); Frou-fry, Hunter mech(1/16); Cannibox, Mimic(1/64); Mecha-mynah, Cyber slime, Metal dragon, Trauminator(1/128)</td>
+            </tr>
+            <tr>
+            <td align="center">73</td>
+            <td>Key</td>
+            <td>Heart of mud</td>
+            <td>A magical item that can invest mud with a soul.</td>
+            <td align="center"></td>
+            <td> </td>
+            <td> </td>
+            </tr>
+    </tbody>
+</table>
+
+<!-- DataTables JS and jQuery -->
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+<!-- External JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>

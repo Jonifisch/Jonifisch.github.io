@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weapons - Joker 2</title>
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+
+  <!-- External CSS file -->
+  <link rel="stylesheet" type="text/css" href="joker2.css">
+</head>
+<body>
+  <div align="left">
+    <a href="/index.html">
+        Return to Index
+    </a>
+</div>
+<div align="center">
+    
+<img align="center" src="Dragon_Quest_Monsters_Joker_2_Logo.jpg" alt="Dragon Quest Monsters Joker 2" Height="150" Width="324">
+<h1>
+List of all Weapons
+</h1>
+</img>
+</div>
+<!-- Search bar -->
+<div id="search-container">
+  <input type="text" id="search-input" onkeyup="filterTable()" placeholder="Search...">
+</div>
+
+<!-- Table -->
+<table id="data-table" border="1">
+  <thead><tr><th title="Field #1">ID</th>
+      <th title="Field #2">Type</th>
+      <th title="Field #3">Name</th>
+      <th title="Field #4">Attack</th>
+      <th title="Field #5">Effect</th>
+      <th title="Field #6">Price</th>
+      <th title="Field #7">Upgrades required</th>
+      <th title="Field #8">How to obtain</th>
+      </tr></thead>
+      <tbody><tr>
+      <td align="center">1</td>
+      <td>Sword</td>
+      <td>Copper sword</td>
+      <td align="right">10</td>
+      <td>-</td>
+      <td align="right">270</td>
+      <td>None</td>
+      <td>Skeleton(1/8); Conklave(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">2</td>
+      <td>Sword</td>
+      <td>Divine dagger</td>
+      <td align="right">13</td>
+      <td>Rather effective against the undead.</td>
+      <td align="right">530</td>
+      <td>1 (1 Machine part)</td>
+      <td>Wax murderer(1/16); Nardragon(1/64)</td>
+      </tr>
+      <tr>
+      <td align="center">3</td>
+      <td>Sword</td>
+      <td>Rapier</td>
+      <td align="right">18</td>
+      <td>Rather effective against dragons.</td>
+      <td align="right">840</td>
+      <td>2 (5 Machine parts)</td>
+      <td>Boss: Cross bones(1/8)</td>
+      </tr>
+      <tr>
+      <td align="center">4</td>
+      <td>Sword</td>
+      <td>Steel broadsword</td>
+      <td align="right">30</td>
+      <td>An ordinary steel sword.</td>
+      <td align="right">2000</td>
+      <td>3 (7 Machine parts)</td>
+      <td>Gargoyle(1/64); Phantom fencer(1/256)</td>
+      </tr>
+      <tr>
+      <td align="center">5</td>
+      <td>Sword</td>
+      <td>Zombiesbane</td>
+      <td align="right">36</td>
+      <td>Rather effective against the undead.</td>
+      <td align="right">3850</td>
+      <td>4 (11 Machine parts)</td>
+      <td>Restless armour, Phantom swordsman(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">6</td>
+      <td>Sword</td>
+      <td>Dragonsbane</td>
+      <td align="right">41</td>
+      <td>Rather effective against dragons.</td>
+      <td align="right">4700</td>
+      <td>5 (16 Machine parts)</td>
+      <td>Red dragon(1/64); Green dragon(1/256)</td>
+      </tr>
+      <tr>
+      <td align="center">7</td>
+      <td>Sword</td>
+      <td>Obsidian sword</td>
+      <td align="right">48</td>
+      <td>Highly likely to land a hit agains metal monsters.</td>
+      <td align="right">7000</td>
+      <td>6 (23 Machine parts)</td>
+      <td>Phantom swordsman(1/64)</td>
+      </tr>
+      <tr>
+      <td align="center">8</td>
+      <td>Sword</td>
+      <td>Silver broadsword</td>
+      <td align="right">62</td>
+      <td>-</td>
+      <td align="right">9800</td>
+      <td>7 (34 Machine parts)</td>
+      <td>Notso macho(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">9</td>
+      <td>Sword</td>
+      <td>Zombiesblight</td>
+      <td align="right">67</td>
+      <td>Effective against the undead.</td>
+      <td align="right">10000</td>
+      <td>8 (52 Machine parts)</td>
+      <td>Night knight(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">10</td>
+      <td>Sword</td>
+      <td>Dragonsblight</td>
+      <td align="right">72</td>
+      <td>Effective against dragons.</td>
+      <td align="right">11200</td>
+      <td>9 (78 Machine parts)</td>
+      <td>Dorsal fiend(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">11</td>
+      <td>Sword</td>
+      <td>Miracle sword</td>
+      <td align="right">77</td>
+      <td>Restores some of the wielder&#39;s HP.</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Tag Battle: Shogum(1/32)</td>
+      </tr>
+      <tr>
+      <td align="center">12</td>
+      <td>Sword</td>
+      <td>Zombie slayer</td>
+      <td align="right">81</td>
+      <td>Highly effective against the undead.</td>
+      <td align="right">17000</td>
+      <td>10 (114 Machine parts)</td>
+      <td>Phantom swordsman(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">13</td>
+      <td>Sword</td>
+      <td>Dragon slayer</td>
+      <td align="right">86</td>
+      <td>Highly effective against dragons.</td>
+      <td align="right">17500</td>
+      <td>10 (114 Machine parts)</td>
+      <td>Great dragon(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">14</td>
+      <td>Sword</td>
+      <td>Giant&#39;s sword</td>
+      <td align="right">90</td>
+      <td>-</td>
+      <td align="right">30000</td>
+      <td>10 (114 Machine parts)</td>
+      <td>Trauminator(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">15</td>
+      <td>Sword</td>
+      <td>Metal king sword</td>
+      <td align="right">102</td>
+      <td>Highly likely to land a hit agains metal monsters.</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Metal king slime(1/256)</td>
+      </tr>
+      <tr>
+      <td align="center">16</td>
+      <td>Sword</td>
+      <td>Lost katana</td>
+      <td align="right">110</td>
+      <td>-</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Killing machine(1/256)</td>
+      </tr>
+      <tr>
+      <td align="center">17</td>
+      <td>Sword</td>
+      <td>Leonine greatsword</td>
+      <td align="right">95</td>
+      <td>Increases agility and wisdom.(+20 for each)</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Reward from Leonyx for defeating Rigor Mortex.</td>
+      </tr>
+      <tr>
+      <td align="center">18</td>
+      <td>Spear</td>
+      <td>Iron lance</td>
+      <td align="right">9</td>
+      <td>Rather effective against slimes.</td>
+      <td align="right">310</td>
+      <td>None</td>
+      <td>Spiked hare(1/256)</td>
+      </tr>
+      <tr>
+      <td align="center">19</td>
+      <td>Spear</td>
+      <td>Pitchfork</td>
+      <td align="right">16</td>
+      <td>Rather effective against naturalists. Makes critical hits easier to land.</td>
+      <td align="right">780</td>
+      <td>1 (1 Machine part)</td>
+      <td>Imp, Archdemon(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">20</td>
+      <td>Spear</td>
+      <td>Sacred spear</td>
+      <td align="right">22</td>
+      <td>Rather effective against demons.</td>
+      <td align="right">920</td>
+      <td>3 (7 Machine parts)</td>
+      <td>Octavian sentry(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">21</td>
+      <td>Spear</td>
+      <td>Partisan</td>
+      <td align="right">28</td>
+      <td>Rather effective against materialists.</td>
+      <td align="right">2300</td>
+      <td>4 (11 Machine parts)</td>
+      <td>Grim rider(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">22</td>
+      <td>Spear</td>
+      <td>Holy lance</td>
+      <td align="right">34</td>
+      <td>Rather effective against the undead.</td>
+      <td align="right">2850</td>
+      <td>6 (23 Machine parts)</td>
+      <td>Lethal armour(1/128); Imp(1/256)</td>
+      </tr>
+      <tr>
+      <td align="center">23</td>
+      <td>Spear</td>
+      <td>Hunting spear</td>
+      <td align="right">40</td>
+      <td>Rather effective against beasts. Makes critical hits easier to land.</td>
+      <td align="right">4400</td>
+      <td>7 (34 Machine parts)</td>
+      <td> </td>
+      </tr>
+      <tr>
+      <td align="center">24</td>
+      <td>Spear</td>
+      <td>Dragon lance</td>
+      <td align="right">45</td>
+      <td>Rather effective against dragons.</td>
+      <td align="right">6400</td>
+      <td>9 (78 Machine parts)</td>
+      <td> </td>
+      </tr>
+      <tr>
+      <td align="center">25</td>
+      <td>Spear</td>
+      <td>Halberd</td>
+      <td align="right">57</td>
+      <td>-</td>
+      <td align="right">7100</td>
+      <td>10 (114 Machine parts)</td>
+      <td> </td>
+      </tr>
+      <tr>
+      <td align="center">26</td>
+      <td>Spear</td>
+      <td>Gracos&#39;s trident</td>
+      <td align="right">58</td>
+      <td>Effective against naturalists. Increases defence.(+14)</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Tag Battle: Overkilling machine(1/32)</td>
+      </tr>
+      <tr>
+      <td align="center">27</td>
+      <td>Spear</td>
+      <td>Diablo spear</td>
+      <td align="right">76</td>
+      <td>Effective against demons. Makes critical hits easier to land.</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Unused.</td>
+      </tr>
+      <tr>
+      <td align="center">28</td>
+      <td>Spear</td>
+      <td>Hero spear</td>
+      <td align="right">82</td>
+      <td>-</td>
+      <td align="right">16500</td>
+      <td>11 (162 Machine parts)</td>
+      <td>Empyrea(1/256)</td>
+      </tr>
+      <tr>
+      <td align="center">29</td>
+      <td>Spear</td>
+      <td>Gáe bolg</td>
+      <td align="right">94</td>
+      <td>Makes critical hits easier to land.</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Found in a treasure chest in the Dark World.</td>
+      </tr>
+      <tr>
+      <td align="center">30</td>
+      <td>Axe</td>
+      <td>Stone axe</td>
+      <td align="right">7</td>
+      <td>-</td>
+      <td align="right">180</td>
+      <td>None</td>
+      <td>Headhunter(1/64); Mischievous mole(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">31</td>
+      <td>Axe</td>
+      <td>Woodcutter&#39;s axe</td>
+      <td align="right">14</td>
+      <td>Rather effective against beasts and naturalists.</td>
+      <td align="right">650</td>
+      <td>1 (1 Machine part)</td>
+      <td> </td>
+      </tr>
+      <tr>
+      <td align="center">32</td>
+      <td>Axe</td>
+      <td>Iron axe</td>
+      <td align="right">23</td>
+      <td>-</td>
+      <td align="right">990</td>
+      <td>3 (7 Machine parts)</td>
+      <td>Paws(1/128); Headhunter(1/256)</td>
+      </tr>
+      <tr>
+      <td align="center">33</td>
+      <td>Axe</td>
+      <td>Woodman&#39;s axe</td>
+      <td align="right">32</td>
+      <td>Rather effective against beasts and naturalists.</td>
+      <td align="right">2150</td>
+      <td>4 (11 Machine parts)</td>
+      <td> </td>
+      </tr>
+      <tr>
+      <td align="center">34</td>
+      <td>Axe</td>
+      <td>Haeadsman&#39;s axe</td>
+      <td align="right">39</td>
+      <td>Makes critical hits easier to land.</td>
+      <td align="right">4200</td>
+      <td>6 (23 Machine parts)</td>
+      <td>Fright knight(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">35</td>
+      <td>Axe</td>
+      <td>Battleaxe</td>
+      <td align="right">52</td>
+      <td>-</td>
+      <td align="right">6700</td>
+      <td>7 (34 Machine parts)</td>
+      <td> </td>
+      </tr>
+      <tr>
+      <td align="center">36</td>
+      <td>Axe</td>
+      <td>Forester&#39;s axe</td>
+      <td align="right">60</td>
+      <td>Effective against beasts and naturalists.</td>
+      <td align="right">8200</td>
+      <td>9 (78 Machine parts)</td>
+      <td>Dark slime knight(128)</td>
+      </tr>
+      <tr>
+      <td align="center">37</td>
+      <td>Axe</td>
+      <td>King axe</td>
+      <td align="right">81</td>
+      <td>-</td>
+      <td align="right">16000</td>
+      <td>10 (114 Machine parts)</td>
+      <td>Marquis de léon(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">38</td>
+      <td>Axe</td>
+      <td>Ranger&#39;s axe</td>
+      <td align="right">90</td>
+      <td>Highly effective against beasts and naturalists.</td>
+      <td align="right">39000</td>
+      <td>11 (162 Machine parts)</td>
+      <td>Dark slime knight(1/256)</td>
+      </tr>
+      <tr>
+      <td align="center">39</td>
+      <td>Axe</td>
+      <td>Executioner&#39;s axe</td>
+      <td align="right">93</td>
+      <td>Makes critical hits easier to land.</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Unused.</td>
+      </tr>
+      <tr>
+      <td align="center">40</td>
+      <td>Hammer</td>
+      <td>Oaken club</td>
+      <td align="right">3</td>
+      <td>Increases defence.(+5)</td>
+      <td align="right">120</td>
+      <td>None</td>
+      <td>Gigantes(1/8); Boss troll(1/32)</td>
+      </tr>
+      <tr>
+      <td align="center">41</td>
+      <td>Hammer</td>
+      <td>Sludgehammer</td>
+      <td align="right">12</td>
+      <td>Rather effective against materialists and slimes.</td>
+      <td align="right">400</td>
+      <td>1 (1 Machine part)</td>
+      <td>Hammerhood(1/64)</td>
+      </tr>
+      <tr>
+      <td align="center">42</td>
+      <td>Hammer</td>
+      <td>Pile-on</td>
+      <td align="right">20</td>
+      <td>Increases defence.(+12)</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Slime stack(1/32)</td>
+      </tr>
+      <tr>
+      <td align="center">43</td>
+      <td>Hammer</td>
+      <td>Iron hammer</td>
+      <td align="right">24</td>
+      <td>Increases defence.(+8)</td>
+      <td align="right">1540</td>
+      <td>3 (7 Machine parts)</td>
+      <td>Golem(1/64)</td>
+      </tr>
+      <tr>
+      <td align="center">44</td>
+      <td>Hammer</td>
+      <td>War hammer</td>
+      <td align="right">31</td>
+      <td>Occasionally crushes foes in a single blow.</td>
+      <td align="right">5200</td>
+      <td>4 (11 Machine parts)</td>
+      <td>Hacksaurus(1/256)</td>
+      </tr>
+      <tr>
+      <td align="center">45</td>
+      <td>Hammer</td>
+      <td>Miracle mallet</td>
+      <td align="right">37</td>
+      <td>Restores some of the wielder&#39;s HP.</td>
+      <td align="right">5800</td>
+      <td>6 (23 Machine parts)</td>
+      <td> </td>
+      </tr>
+      <tr>
+      <td align="center">46</td>
+      <td>Hammer</td>
+      <td>Schleiman shooter</td>
+      <td align="right">46</td>
+      <td>Effective against materialists.</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Unused.</td>
+      </tr>
+      <tr>
+      <td align="center">47</td>
+      <td>Hammer</td>
+      <td>Giant wrench</td>
+      <td align="right">49</td>
+      <td>Increases defence.(+13)</td>
+      <td align="right">7300</td>
+      <td>7 (34 Machine parts)</td>
+      <td>Canzar(1/128); Tyrantosaurus(1/256)</td>
+      </tr>
+      <tr>
+      <td align="center">48</td>
+      <td>Hammer</td>
+      <td>Warlord&#39;s hammer</td>
+      <td align="right">58</td>
+      <td>Occasionally crushes foes in a single blow.</td>
+      <td align="right">17000</td>
+      <td>11 (162 Machine parts)</td>
+      <td>Hacksaurus(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">49</td>
+      <td>Hammer</td>
+      <td>Marauder&#39;s maul</td>
+      <td align="right">80</td>
+      <td>Increases defence.(+18)</td>
+      <td align="right">25000</td>
+      <td>9 (78 Machine parts)</td>
+      <td>Boss troll(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">50</td>
+      <td>Hammer</td>
+      <td>Miracle mace</td>
+      <td align="right">87</td>
+      <td>Restores some of the wielder&#39;s HP.</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Wi-Fi Prize. No longer obtainable.</td>
+      </tr>
+      <tr>
+      <td align="center">51</td>
+      <td>Hammer</td>
+      <td>Sledgehammer</td>
+      <td align="right">97</td>
+      <td>Highly effective against materialists and slimes.</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Atlas(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">52</td>
+      <td>Whip</td>
+      <td>Leather whip</td>
+      <td align="right">4</td>
+      <td>Deals damage to all enemies.</td>
+      <td align="right">380</td>
+      <td>None</td>
+      <td> </td>
+      </tr>
+      <tr>
+      <td align="center">53</td>
+      <td>Whip</td>
+      <td>Battle whip</td>
+      <td align="right">10</td>
+      <td>Deals damage to all enemies.</td>
+      <td align="right">630</td>
+      <td>1 (1 Machine part)</td>
+      <td>Bodkin archer(1/256)</td>
+      </tr>
+      <tr>
+      <td align="center">54</td>
+      <td>Whip</td>
+      <td>Thorn whip</td>
+      <td align="right">14</td>
+      <td>Deals damage to all enemies.</td>
+      <td align="right">1400</td>
+      <td>3 (7 Machine parts)</td>
+      <td> </td>
+      </tr>
+      <tr>
+      <td align="center">55</td>
+      <td>Whip</td>
+      <td>Snakeskin whip</td>
+      <td align="right">20</td>
+      <td>Deals damage to all enemies.</td>
+      <td align="right">1800</td>
+      <td>4 (11 Machine parts)</td>
+      <td>Frou-fry(1/256)</td>
+      </tr>
+      <tr>
+      <td align="center">56</td>
+      <td>Whip</td>
+      <td>Sidewinder</td>
+      <td align="right">30</td>
+      <td>Deals damage to all enemies.</td>
+      <td align="right">2800</td>
+      <td>6 (23 Machine parts)</td>
+      <td> </td>
+      </tr>
+      <tr>
+      <td align="center">57</td>
+      <td>Whip</td>
+      <td>Chain whip</td>
+      <td align="right">36</td>
+      <td>Deals damage to all enemies.</td>
+      <td align="right">4000</td>
+      <td>7 (34 Machine parts)</td>
+      <td> </td>
+      </tr>
+      <tr>
+      <td align="center">58</td>
+      <td>Whip</td>
+      <td>Dragontail whip</td>
+      <td align="right">42</td>
+      <td>Deals damage to all enemies.</td>
+      <td align="right">6700</td>
+      <td>9 (78 Machine parts)</td>
+      <td>Mortella(1/64); Snapdragon(1/128);Frou-frou (1/256)</td>
+      </tr>
+      <tr>
+      <td align="center">59</td>
+      <td>Whip</td>
+      <td>Spiked steel whip</td>
+      <td align="right">48</td>
+      <td>Deals damage to all enemies.</td>
+      <td align="right">9200</td>
+      <td>10 (114 Machine parts)</td>
+      <td> </td>
+      </tr>
+      <tr>
+      <td align="center">60</td>
+      <td>Whip</td>
+      <td>Scourge whip</td>
+      <td align="right">58</td>
+      <td>Deals damage to all enemies.</td>
+      <td align="right">18800</td>
+      <td>11 (162 Machine parts)</td>
+      <td>Khalamari(1/64); Gripevine(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">61</td>
+      <td>Whip</td>
+      <td>Gringham whip</td>
+      <td align="right">68</td>
+      <td>Deals damage to all enemies.</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Found in a treasure chest in the Dark World.</td>
+      </tr>
+      <tr>
+      <td align="center">62</td>
+      <td>Whip</td>
+      <td>Wizardly whip</td>
+      <td align="right">76</td>
+      <td>Deals damage to all enemies.</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Wi-Fi Prize. No longer obtainable.</td>
+      </tr>
+      <tr>
+      <td align="center">63</td>
+      <td>Claw</td>
+      <td>Stone claws</td>
+      <td align="right">5</td>
+      <td>Increases agility.(+8)</td>
+      <td align="right">200</td>
+      <td>None</td>
+      <td>Wild slime(1/64); Great sabrecub(1/128); Komodo(1/256)</td>
+      </tr>
+      <tr>
+      <td align="center">64</td>
+      <td>Claw</td>
+      <td>Paws</td>
+      <td align="right">10</td>
+      <td>Increases agility.(+20)</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Tag Battle: Teeny sanguini(1/32)</td>
+      </tr>
+      <tr>
+      <td align="center">65</td>
+      <td>Claw</td>
+      <td>Iron claws</td>
+      <td align="right">11</td>
+      <td>Increases agility.(+10)</td>
+      <td align="right">500</td>
+      <td>1 (1 Machine part)</td>
+      <td>Wild slime, Great sabrecat(1/64)</td>
+      </tr>
+      <tr>
+      <td align="center">66</td>
+      <td>Claw</td>
+      <td>Falcon claws</td>
+      <td align="right">15</td>
+      <td>Increases agility.(+52)</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Found in a treasure chest inside the Albatross.</td>
+      </tr>
+      <tr>
+      <td align="center">67</td>
+      <td>Claw</td>
+      <td>Metal claws</td>
+      <td align="right">15</td>
+      <td>Highly likely to land a hit agains metal monsters. Increases agility.(+24)</td>
+      <td align="right">1650</td>
+      <td>3 (7 Machine parts)</td>
+      <td>Great sabrecat(1/64)</td>
+      </tr>
+      <tr>
+      <td align="center">68</td>
+      <td>Claw</td>
+      <td>Sacred claws</td>
+      <td align="right">25</td>
+      <td>Effective against demons. Increases agility.(+19)</td>
+      <td align="right">2500</td>
+      <td>4 (11 Machine parts)</td>
+      <td>Dual duellers(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">69</td>
+      <td>Claw</td>
+      <td>Razor claws</td>
+      <td align="right">33</td>
+      <td>Increases agility.(+24)</td>
+      <td align="right">3100</td>
+      <td>6 (23 Machine parts)</td>
+      <td>Firebird(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">70</td>
+      <td>Claw</td>
+      <td>Steel claws</td>
+      <td align="right">43</td>
+      <td>Increases agility.(+26)</td>
+      <td align="right">5500</td>
+      <td>7 (34 Machine parts)</td>
+      <td>Jumping jackal(1/64)</td>
+      </tr>
+      <tr>
+      <td align="center">71</td>
+      <td>Claw</td>
+      <td>Dragon claws</td>
+      <td align="right">44</td>
+      <td>Rather effective against dragons.</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Noble gasbagon(1/32)</td>
+      </tr>
+      <tr>
+      <td align="center">72</td>
+      <td>Claw</td>
+      <td>Metal talons</td>
+      <td align="right">51</td>
+      <td>Highly likely to land a hit agains metal monsters. Increases agility.(+29)</td>
+      <td align="right">7200</td>
+      <td>9 (78 Machine parts)</td>
+      <td>Metal dragon(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">73</td>
+      <td>Claw</td>
+      <td>Gryphon talons</td>
+      <td align="right">77</td>
+      <td>Increases agility.(+40)</td>
+      <td align="right">12000</td>
+      <td>10 (114 Machine parts)</td>
+      <td>Missing lynx(1/64); Great sabrecat(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">74</td>
+      <td>Claw</td>
+      <td>Sacred talons</td>
+      <td align="right">84</td>
+      <td>Highly effective against demons. Increases agility.(+30)</td>
+      <td align="right">34500</td>
+      <td>11 (162 Machine parts)</td>
+      <td>Dual duellers(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">75</td>
+      <td>Claw</td>
+      <td>Ebony talons</td>
+      <td align="right">88</td>
+      <td>Increases agility.(+18)</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Unused.</td>
+      </tr>
+      <tr>
+      <td align="center">76</td>
+      <td>Claw</td>
+      <td>Orichalcum claws</td>
+      <td align="right">95</td>
+      <td>Increases agility.(+37)</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Wi-Fi Prize. No longer obtainable.</td>
+      </tr>
+      <tr>
+      <td align="center">77</td>
+      <td>Staff</td>
+      <td>Cypress staff</td>
+      <td align="right">4</td>
+      <td>Increases wisdom.(+10)</td>
+      <td align="right">150</td>
+      <td>None</td>
+      <td>Lips(1/64)</td>
+      </tr>
+      <tr>
+      <td align="center">78</td>
+      <td>Staff</td>
+      <td>Staff of Ghent</td>
+      <td align="right">7</td>
+      <td>Restores some of the wielder&#39;s HP.</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Malevolamp(1/32)</td>
+      </tr>
+      <tr>
+      <td align="center">79</td>
+      <td>Staff</td>
+      <td>Phoenix sceptre</td>
+      <td align="right">8</td>
+      <td>A monster wielding this staff will pass on its form when sythesised.</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Found in a treasure chest near the top of cragravation</td>
+      </tr>
+      <tr>
+      <td align="center">80</td>
+      <td>Staff</td>
+      <td>Rune staff</td>
+      <td align="right">12</td>
+      <td>Increases wisdom.(+22)</td>
+      <td align="right">580</td>
+      <td>4 (11 Machine parts)</td>
+      <td> </td>
+      </tr>
+      <tr>
+      <td align="center">81</td>
+      <td>Staff</td>
+      <td>Plus sceptre</td>
+      <td align="right">23</td>
+      <td>Used to ensure that synthesised monster is {+}.</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Found in a treasure chest in Unshore.</td>
+      </tr>
+      <tr>
+      <td align="center">82</td>
+      <td>Staff</td>
+      <td>Minus sceptre</td>
+      <td align="right">23</td>
+      <td>Used to ensure that synthesised monster is {-}.</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Reward for Level 9 of the Monster Scout Proficiency Test.</td>
+      </tr>
+      <tr>
+      <td align="center">83</td>
+      <td>Staff</td>
+      <td>Crystal staff</td>
+      <td align="right">34</td>
+      <td>Increases wisdom.(+33)</td>
+      <td align="right">3600</td>
+      <td>6 (23 Machine parts)</td>
+      <td>Thornella(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">84</td>
+      <td>Staff</td>
+      <td>Malevomace</td>
+      <td align="right">42</td>
+      <td>Increases wisdom.(+48)</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Unused.</td>
+      </tr>
+      <tr>
+      <td align="center">85</td>
+      <td>Staff</td>
+      <td>Staff of darkness</td>
+      <td align="right">47</td>
+      <td>Increases wisdom.(+38)</td>
+      <td align="right">4000</td>
+      <td>9 (78 Machine parts)</td>
+      <td>Exorsus(1/64)</td>
+      </tr>
+      <tr>
+      <td align="center">86</td>
+      <td>Staff</td>
+      <td>Sage&#39;s staff</td>
+      <td align="right">61</td>
+      <td>Increases wisdom.(+46)</td>
+      <td align="right">7500</td>
+      <td>11 (162 Machine parts)</td>
+      <td>Goodybag(1/128)</td>
+      </tr>
+      <tr>
+      <td align="center">87</td>
+      <td>Staff</td>
+      <td>Royal rod</td>
+      <td align="right">83</td>
+      <td>Increases wisdom.(+50)</td>
+      <td align="right"></td>
+      <td> </td>
+      <td>Rigor Mortex(1/1)</td>
+      </tr>
+      </tbody></table>
+</table>
+
+<!-- DataTables JS and jQuery -->
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+<!-- External JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>
